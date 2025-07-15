@@ -1,0 +1,30 @@
+{
+  "name": "rabbitmq-dlx-example",
+  "version": "1.0.0",
+  "description": "A simple example demonstrating RabbitMQ with Dead Letter Exchanges (DLX) using Node.js and amqplib.",
+  "main": "producer_with_dlx.js",
+  "scripts": {
+    "start": "node producer_with_dlx.js",
+    "dlx:setup": "node dlx_setup.js",
+    "consumer:main": "node consumer_with_dlx.js",
+    "consumer:dlq": "node dlq_consumer.js",
+    "producer": "node producer_with_dlx.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RabbitMQ",
+    "AMQP",
+    "Node.js",
+    "amqplib",
+    "Dead Letter Exchange",
+    "DLX",
+    "Message Queue",
+    "Microservices"
+  ],
+  "author": "Your Name/Organization",
+  "license": "MIT",
+  "dependencies": {
+    "amqp": "^0.2.7",
+    "amqplib": "^0.10.8"
+  }
+}
